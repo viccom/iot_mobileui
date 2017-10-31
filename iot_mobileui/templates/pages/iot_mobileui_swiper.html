@@ -1,0 +1,73 @@
+{% extends "templates/iot_mobileui_base.html" %}
+
+{% block mystyle %}
+    <style>
+      .swiper-container {
+        width: 100%;
+          height: 100%;
+      }
+
+      .swiper-container img {
+        display: block;
+        width: 100%;
+      }
+    </style>
+{% endblock %}
+
+{% block myscript %}
+{% endblock %}
+
+{% block content %}
+<div class="weui-tab">
+
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><h1>页面一</h1></div>
+            <div class="swiper-slide"><h1>页面二</h1></div>
+            <div class="swiper-slide"><h1>页面三</h1></div>
+              <div class="swiper-slide"><h1>页面四</h1></div>
+          </div>
+      <!-- If we need pagination -->
+        <!--<div class="swiper-pagination"></div>-->
+    </div>
+
+          <div class="weui-tabbar">
+            <a href="#tab1" class="weui-tabbar__item weui-bar__item--on">
+              <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>
+              <div class="weui-tabbar__icon">
+                <img src="/assets/iot_mobileui/images/icon_nav_button.png" alt="">
+              </div>
+              <p class="weui-tabbar__label">Dashboard</p>
+            </a>
+            <a href="#tab2" class="weui-tabbar__item">
+              <div class="weui-tabbar__icon">
+                <img src="/assets/iot_mobileui/images/icon_nav_msg.png" alt="">
+              </div>
+              <p class="weui-tabbar__label">Devices List</p>
+            </a>
+            <a href="#tab3" class="weui-tabbar__item">
+              <div class="weui-tabbar__icon">
+                <img src="/assets/iot_mobileui/images/icon_nav_article.png" alt="">
+              </div>
+              <p class="weui-tabbar__label">Iot Msg</p>
+            </a>
+            <a href="#tab4" class="weui-tabbar__item">
+              <div class="weui-tabbar__icon">
+                <img src="/assets/iot_mobileui/images/icon_nav_cell.png" alt="">
+              </div>
+              <p class="weui-tabbar__label">More</p>
+            </a>
+          </div>
+
+        </div>
+
+        <script src="/assets/iot_mobileui/js/swiper.min.js"></script>
+    <script>
+      $(".swiper-container").swiper({
+      });
+    </script>
+
+
+{% endblock %}

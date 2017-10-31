@@ -1,0 +1,83 @@
+{% extends "templates/iot_mobileui_base.html" %}
+
+{% block mystyle %}
+{% endblock %}
+
+{% block myscript %}
+{% endblock %}
+
+{% block content %}
+
+    <header class='demos-header'>
+      <h1 class="demos-title">Next Iot Plat</h1>
+      <p class='demos-sub-title'>简单强大的IOT网关，不仅仅是采集数据</p>
+    </header>
+
+    <div class="weui-grids">
+      <a href="buttons.html" class="weui-grid js_grid">
+        <div class="weui-grid__icon">
+          <img src="/assets/iot_mobileui/images/icon_nav_button.png" alt="">
+        </div>
+        <p class="weui-grid__label">
+          Dashboard
+        </p>
+      </a>
+      <a href="cell.html" class="weui-grid js_grid">
+        <div class="weui-grid__icon">
+          <img src="/assets/iot_mobileui/images/icon_nav_cell.png" alt="">
+        </div>
+        <p class="weui-grid__label">
+          Devices List
+        </p>
+      </a>
+      <a href="form.html" class="weui-grid js_grid">
+        <div class="weui-grid__icon">
+          <img src="/assets/iot_mobileui/images/icon_nav_city.png" alt="">
+        </div>
+        <p class="weui-grid__label">
+          Devices Map
+        </p>
+      </a>
+
+      <a href="dialog.html" class="weui-grid js_grid">
+        <div class="weui-grid__icon">
+          <img src="/assets/iot_mobileui/images/icon_nav_dialog.png" alt="">
+        </div>
+        <p class="weui-grid__label">
+          Graph
+        </p>
+      </a>
+
+      <a href="msg.html" class="weui-grid js_grid">
+        <div class="weui-grid__icon">
+          <img src="/assets/iot_mobileui/images/icon_nav_msg.png" alt="">
+        </div>
+        <p class="weui-grid__label">
+          Iot Msg
+        </p>
+      </a>
+      <a href="article.html" class="weui-grid js_grid">
+        <div class="weui-grid__icon">
+          <img src="/assets/iot_mobileui/images/icon_nav_article.png" alt="">
+        </div>
+        <p class="weui-grid__label">
+          Profile
+        </p>
+      </a>
+
+    </div>
+
+    <div class="weui-footer">
+      <p class="weui-footer__links">
+        <a href="#" class="weui-footer__link">IOT Platform</a>
+      </p>
+      <p class="weui-footer__text">Copyright © 2017 m2mio.com</p>
+    </div>
+
+    <style>
+      .weui-footer {
+        margin: 25px 0 10px 0;
+      }
+    </style>
+
+{% endblock %}
