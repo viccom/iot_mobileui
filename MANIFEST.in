@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include iot_mobileui *.css
+recursive-include iot_mobileui *.csv
+recursive-include iot_mobileui *.html
+recursive-include iot_mobileui *.ico
+recursive-include iot_mobileui *.js
+recursive-include iot_mobileui *.json
+recursive-include iot_mobileui *.md
+recursive-include iot_mobileui *.png
+recursive-include iot_mobileui *.py
+recursive-include iot_mobileui *.svg
+recursive-include iot_mobileui *.txt
+recursive-exclude iot_mobileui *.pyc
